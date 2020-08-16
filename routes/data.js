@@ -15,16 +15,24 @@ route.post("/", async (req, res) => {
       pefr,
       groupName,
     } = req.body;
-    let existingPatient = await pool.query(
-      "SELECT * FROM patients WHERE fname = $1 AND lname = $2",
-      [FName, LName]
+    const existingGroups = await pool.query(
+      "SELECT * FROM groups WHERE groupName = $1",
+      [groupName]
     );
+    if (existingGroups.rows.length === 0)
+      return res.json("This group doesn't exist!");
+    let existingPatient = await pool.query(
+      "SELECT * FROM patients WHERE fname = $1 AND lname = $2 AND groupname = $3",
+      [FName, LName, groupName]
+    );
+
     if (existingPatient.rows.length === 0) {
       existingPatient = await pool.query(
         "INSERT INTO patients (fname, lname, groupname) VALUES ($1, $2, $3) RETURNING *",
         [FName, LName, groupName]
       );
     }
+
     const newData = await pool.query(
       "INSERT INTO datapoints (groupname, patientid, heartrate, resprate, spo2, pefr) VALUES ($1, $2, $3, $4, $5, $6) RETURNING *",
       [
