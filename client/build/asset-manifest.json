@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.939cea0d.chunk.css",
+    "main.js": "/static/js/main.b9f008a9.chunk.js",
+    "main.js.map": "/static/js/main.b9f008a9.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.09b85ec0.js",
+    "runtime-main.js.map": "/static/js/runtime-main.09b85ec0.js.map",
+    "static/css/2.d34346ea.chunk.css": "/static/css/2.d34346ea.chunk.css",
+    "static/js/2.c6967b05.chunk.js": "/static/js/2.c6967b05.chunk.js",
+    "static/js/2.c6967b05.chunk.js.map": "/static/js/2.c6967b05.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.47eab8ab5480a3834dca883e93cecfb5.js": "/precache-manifest.47eab8ab5480a3834dca883e93cecfb5.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.d34346ea.chunk.css.map": "/static/css/2.d34346ea.chunk.css.map",
+    "static/css/main.939cea0d.chunk.css.map": "/static/css/main.939cea0d.chunk.css.map",
+    "static/js/2.c6967b05.chunk.js.LICENSE.txt": "/static/js/2.c6967b05.chunk.js.LICENSE.txt",
+    "static/media/PFM.jpeg": "/static/media/PFM.6490903b.jpeg",
+    "static/media/oximeter.jpeg": "/static/media/oximeter.69a786ff.jpeg",
+    "static/media/vitalscope.png": "/static/media/vitalscope.db1f801d.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.09b85ec0.js",
+    "static/css/2.d34346ea.chunk.css",
+    "static/js/2.c6967b05.chunk.js",
+    "static/css/main.939cea0d.chunk.css",
+    "static/js/main.b9f008a9.chunk.js"
+  ]
+}
